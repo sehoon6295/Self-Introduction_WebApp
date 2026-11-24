@@ -36,5 +36,4 @@
 ## TODO (제출 전 실제 내용으로 교체)
 
 - `about.html`: 자기소개 문단, 보유 기술 태그
-- `contact.html`: 실제 연락용 이메일 주소
 - 추후 주차: AppSync + DynamoDB 연동 (listProjects, createContact, createReview, listReviews)
