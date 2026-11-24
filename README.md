@@ -27,7 +27,7 @@
 
 ### 배포 정보
 
-- S3 버킷: `sehoon-self-intro-webapp-124355660486` (퍼블릭 액세스 차단 전체 활성화)
+- S3 버킷: `sehoon-self-intro-webapp-kr-124355660486` (서울, `ap-northeast-2` / 퍼블릭 액세스 차단 전체 활성화)
 - CloudFront 배포 ID: `E14KGKRIGSE1L3`
 - CloudFront 도메인(접속 URL): https://d2z7qcabbgi9on.cloudfront.net
 - Origin Access Control: `sehoon-self-intro-webapp-oac` (`E3KPB3CVJQOM8X`)
