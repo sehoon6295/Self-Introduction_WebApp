@@ -25,9 +25,17 @@
 3. S3 버킷 정책에 CloudFront 서비스 프린시펄만 허용하도록 설정
 4. CloudFront 도메인으로 접속 성공 / S3 버킷 URL 직접 접속 시 거부(Access Denied) 확인
 
+### 배포 정보
+
+- S3 버킷: `sehoon-self-intro-webapp-124355660486` (퍼블릭 액세스 차단 전체 활성화)
+- CloudFront 배포 ID: `E14KGKRIGSE1L3`
+- CloudFront 도메인(접속 URL): https://d2z7qcabbgi9on.cloudfront.net
+- Origin Access Control: `sehoon-self-intro-webapp-oac` (`E3KPB3CVJQOM8X`)
+- S3 버킷 정책: `cloudfront.amazonaws.com` 서비스 프린시펄 + `AWS:SourceArn`이 위 CloudFront 배포 ARN과 일치할 때만 `s3:GetObject` 허용
+
 ## TODO (제출 전 실제 내용으로 교체)
 
-- `about.html`: 학과, 자기소개 문단, 보유 기술 태그
+- `about.html`: 자기소개 문단, 보유 기술 태그
 - `projects.html` 데이터(`js/data.js`의 `SAMPLE_PROJECTS`): 실제 프로젝트 경험
 - `contact.html`: 실제 연락용 이메일 주소
 - 추후 주차: AppSync + DynamoDB 연동 (listProjects, createContact, createReview, listReviews)
