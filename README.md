@@ -33,7 +33,6 @@
 - Origin Access Control: `sehoon-self-intro-webapp-oac` (`E3KPB3CVJQOM8X`)
 - S3 버킷 정책: `cloudfront.amazonaws.com` 서비스 프린시펄 + `AWS:SourceArn`이 위 CloudFront 배포 ARN과 일치할 때만 `s3:GetObject` 허용
 
-## TODO (제출 전 실제 내용으로 교체)
+## TODO
 
-- `about.html`: 자기소개 문단, 보유 기술 태그
 - 추후 주차: AppSync + DynamoDB 연동 (listProjects, createContact, createReview, listReviews)
