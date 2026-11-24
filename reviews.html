@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>후기 | 이세훈</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="reviews">
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a href="index.html" class="brand">이세훈</a>
+      <button class="nav-toggle" aria-label="메뉴 열기">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html" data-page="home">Home</a></li>
+        <li><a href="about.html" data-page="about">소개</a></li>
+        <li><a href="projects.html" data-page="projects">프로젝트</a></li>
+        <li><a href="contact.html" data-page="contact">연락처</a></li>
+        <li><a href="reviews.html" data-page="reviews">후기</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <h1 class="section-title">후기</h1>
+    <p class="section-subtitle">이전 의뢰인·협업자만 초대 코드로 후기를 남길 수 있습니다.</p>
+
+    <form class="form-card" id="review-form" novalidate>
+      <div class="form-row" data-field="code">
+        <label for="code">초대 코드</label>
+        <input type="text" id="code" name="code" required />
+        <p class="form-hint">데모용 코드: DEMO-0001 ~ DEMO-0003 (1회만 사용 가능)</p>
+        <p class="form-error"></p>
+      </div>
+
+      <div class="form-row" data-field="name">
+        <label for="name">이름</label>
+        <input type="text" id="name" name="name" maxlength="20" required />
+        <p class="form-error"></p>
+      </div>
+
+      <div class="form-row" data-field="message">
+        <label for="message">메시지</label>
+        <textarea id="message" name="message" rows="4" maxlength="200" required></textarea>
+        <p class="form-hint">1~200자로 작성해 주세요.</p>
+        <p class="form-error"></p>
+      </div>
+
+      <button type="submit" class="btn btn-primary" id="review-submit">남기기</button>
+
+      <div class="form-message" id="review-message-box"></div>
+    </form>
+
+    <div class="review-list" id="review-list"></div>
+
+    <div class="load-more-wrap" id="load-more-wrap">
+      <button class="btn btn-secondary" id="load-more-btn">더 보기</button>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 이세훈. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/reviews.js"></script>
+</body>
+</html>

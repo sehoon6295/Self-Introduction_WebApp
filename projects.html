@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>프로젝트 | 이세훈</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="projects">
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a href="index.html" class="brand">이세훈</a>
+      <button class="nav-toggle" aria-label="메뉴 열기">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html" data-page="home">Home</a></li>
+        <li><a href="about.html" data-page="about">소개</a></li>
+        <li><a href="projects.html" data-page="projects">프로젝트</a></li>
+        <li><a href="contact.html" data-page="contact">연락처</a></li>
+        <li><a href="reviews.html" data-page="reviews">후기</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <h1 class="section-title">프로젝트</h1>
+    <p class="section-subtitle">최근 진행한 프로젝트부터 표시됩니다. 카드를 눌러 상세 내용을 확인하세요.</p>
+
+    <div class="project-grid" id="project-grid"></div>
+  </main>
+
+  <div class="modal-overlay" id="project-modal">
+    <div class="modal-box">
+      <button class="modal-close" id="modal-close" aria-label="닫기">&times;</button>
+      <h3 id="modal-title"></h3>
+      <div class="modal-field">
+        <span>기간</span>
+        <div id="modal-period"></div>
+      </div>
+      <div class="modal-field">
+        <span>담당 역할</span>
+        <div id="modal-role"></div>
+      </div>
+      <div class="modal-field">
+        <span>사용 기술</span>
+        <div id="modal-tech"></div>
+      </div>
+      <div class="modal-field">
+        <span>결과</span>
+        <div id="modal-result"></div>
+      </div>
+      <div class="modal-field">
+        <span>관련 링크</span>
+        <a id="modal-link" href="#" target="_blank" rel="noopener"></a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 이세훈. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/projects.js"></script>
+</body>
+</html>

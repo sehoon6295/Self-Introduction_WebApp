@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>연락처 | 이세훈</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="contact">
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a href="index.html" class="brand">이세훈</a>
+      <button class="nav-toggle" aria-label="메뉴 열기">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html" data-page="home">Home</a></li>
+        <li><a href="about.html" data-page="about">소개</a></li>
+        <li><a href="projects.html" data-page="projects">프로젝트</a></li>
+        <li><a href="contact.html" data-page="contact">연락처</a></li>
+        <li><a href="reviews.html" data-page="reviews">후기</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <h1 class="section-title">연락처</h1>
+    <p class="section-subtitle">외주 문의를 남겨 주시면 확인 후 이메일로 답변드립니다.</p>
+
+    <div class="contact-links">
+      <!-- TODO: 실제 연락용 이메일 주소로 교체해 주세요 -->
+      <a href="mailto:example@email.com">✉ example@email.com</a>
+      <a href="https://github.com/sehoon6295" target="_blank" rel="noopener">🔗 GitHub</a>
+    </div>
+
+    <form class="form-card" id="contact-form" novalidate>
+      <div class="form-row" data-field="name">
+        <label for="name">이름</label>
+        <input type="text" id="name" name="name" maxlength="20" required />
+        <p class="form-error"></p>
+      </div>
+
+      <div class="form-row" data-field="email">
+        <label for="email">이메일</label>
+        <input type="email" id="email" name="email" required />
+        <p class="form-error"></p>
+      </div>
+
+      <div class="form-row" data-field="type">
+        <label for="type">문의 유형</label>
+        <select id="type" name="type" required>
+          <option value="">선택해 주세요</option>
+          <option value="website">웹사이트</option>
+          <option value="webapp">웹앱</option>
+          <option value="etc">기타</option>
+        </select>
+        <p class="form-error"></p>
+      </div>
+
+      <div class="form-row">
+        <label for="budget">예산 범위 (선택)</label>
+        <input type="text" id="budget" name="budget" placeholder="예: 50만원 ~ 100만원" />
+      </div>
+
+      <div class="form-row">
+        <label for="deadline">희망 일정 (선택)</label>
+        <input type="text" id="deadline" name="deadline" placeholder="예: 2026년 12월까지" />
+      </div>
+
+      <div class="form-row" data-field="message">
+        <label for="message">문의 내용</label>
+        <textarea id="message" name="message" rows="5" minlength="10" maxlength="500" required></textarea>
+        <p class="form-hint">10~500자로 작성해 주세요.</p>
+        <p class="form-error"></p>
+      </div>
+
+      <button type="submit" class="btn btn-primary" id="contact-submit">보내기</button>
+
+      <div class="form-message" id="contact-message"></div>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 이세훈. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>
