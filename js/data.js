@@ -2,11 +2,10 @@
 // From a later week, these arrays will be replaced by AppSync GraphQL calls
 // (listProjects / getProject / listReviews / createReview / createContact)
 // backed by the DynamoDB tables in the plan document (ProjectsTable, ReviewTable, InviteTable, ContactTable).
-// TODO: replace with real project history before final submission.
 
 var SAMPLE_PROJECTS = [
   {
-    id: "p3",
+    id: "p4",
     title: "자기소개 웹앱 (본 프로젝트)",
     startDate: "2026-11-01",
     period: "2026.11 - 진행중",
@@ -16,24 +15,24 @@ var SAMPLE_PROJECTS = [
     link: "#"
   },
   {
-    id: "p2",
-    title: "샘플 프로젝트 B",
-    startDate: "2026.05",
-    period: "2026.03 - 2026.05",
-    role: "백엔드 개발",
-    tech: "Node.js, Express, MySQL",
-    result: "예시 설명 - 실제 프로젝트 내용으로 교체해 주세요.",
-    link: "#"
+    id: "p3",
+    title: "GitInsight 2.0",
+    startDate: "2026-11-09",
+    period: "2026.11 (해커톤)",
+    role: "A파트: 분석 엔진 (레포 분석 · 기여 근거 검증 · LLM 출제/검토)",
+    tech: "Python, TypeScript, Docker, tree-sitter, LLM API(GPT/Gemini)",
+    result: "GitHub 커밋 이력을 근거로 꼬리질문을 이어가는 AI 모의 기술면접 서비스의 분석 엔진 개발 - 코드 근거를 줄 단위로 대조해 불필요한 재출제를 줄이는 검증 로직 개선",
+    link: "https://github.com/GitInsight2-0/GitInsight2.0"
   },
   {
-    id: "p1",
-    title: "샘플 프로젝트 A",
-    startDate: "2025.12",
-    period: "2025.10 - 2025.12",
-    role: "풀스택 개발",
-    tech: "React, Spring Boot",
-    result: "예시 설명 - 실제 프로젝트 내용으로 교체해 주세요.",
-    link: "#"
+    id: "p2",
+    title: "healthcare-2-emergency",
+    startDate: "2026-10-23",
+    period: "2026.10 - 2026.11",
+    role: "D파트: 구급대원 웹앱 개발",
+    tech: "React, TypeScript, Vite, AWS Amplify, Cognito",
+    result: "구급차 현장 음성 자동 요약·중증도 분류·이송 병원 매칭 서비스의 구급대원용 웹앱 구현 - 로그인 → 녹음 → 일지 확인/수정 → 등급 확정 플로우, 백엔드 API·Cognito 연동, AWS Amplify 배포",
+    link: "https://github.com/rlehd/healthcare-2-emergency"
   }
 ];
 

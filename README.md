@@ -36,6 +36,5 @@
 ## TODO (제출 전 실제 내용으로 교체)
 
 - `about.html`: 자기소개 문단, 보유 기술 태그
-- `projects.html` 데이터(`js/data.js`의 `SAMPLE_PROJECTS`): 실제 프로젝트 경험
 - `contact.html`: 실제 연락용 이메일 주소
 - 추후 주차: AppSync + DynamoDB 연동 (listProjects, createContact, createReview, listReviews)
